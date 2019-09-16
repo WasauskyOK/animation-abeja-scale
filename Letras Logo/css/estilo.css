@@ -1,0 +1,120 @@
+:root{
+    --colorFondo:;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--colorFondo);
+    justify-content: center;
+    align-items: center;
+    animation:colores 4s  infinite alternate ;
+   
+}
+
+@keyframes colores{
+    25%{
+      
+    }
+    50%{
+        
+    }
+    75%{
+        
+    }
+    100%{
+        
+    }
+}
+.imagen{
+    margin: auto;
+    clip-path:polygon(50% 0% ,75% 0% ,100% 0% ,100% 50%,100% 100%,50% 100%,0% 100%,0% 50%,0% 0%,25% 0%);
+    animation: estrella 1s infinite alternate linear;
+    
+}
+@keyframes estrella{
+	from{
+		transform:  translateX(2vw);
+	}
+	to{
+		/*transition: all 0.5s;*/
+	/*clip-path:circle(20%  at 50% 50%);*/
+	clip-path:polygon(50% 0% ,75% 25% ,100% 25% ,75% 50%,100% 100%,50% 75%,0% 100%,25% 50%,0% 25%,25% 25%);
+	transform: rotateY(45deg)scale(1.2)
+        
+        ;
+        
+	
+    }
+}
+.titulo{
+    position: relative;
+    margin-top: 2rem;
+    font-family: monospace;
+    -webkit-background-clip:text;
+    color: transparent;
+    background-image: radial-gradient(at right,red,blue,orange);
+    animation: agrandar 456ms infinite linear alternate;
+}
+@keyframes agrandar{
+    to{
+        
+    }
+    from{
+        
+        transform: scale(1.089)skew(15deg);
+    }
+}
+.titulo:nth-child(2){
+    color: black;
+    -webkit-background-clip:text;
+    color: transparent;
+    background-image: url(http://todofondos.com/bin/fondos/03/77/43d.jpg);
+}
+.titulo:nth-child(3){
+    color: black;
+    -webkit-background-clip:text;
+    color: transparent;
+    background-image: url(https://thumbs.dreamstime.com/z/caramelos-coloridos-23859355.jpg);
+}
+.titulo:nth-child(4){
+    font-weight: bold;
+    font-size: 55px;
+    color: black;
+    -webkit-background-clip:text;
+    color: transparent;
+    background-image: url(https://image.shutterstock.com/image-vector/purple-yellow-blue-azure-orange-260nw-385782334.jpg);
+    margin-bottom: 250px;
+}
+
+.titulo span{
+    position: absolute;
+    top: 0;
+    right:0;
+    width: 0;
+    background-color:white;
+    animation: tituloanimacion 16s alternate infinite steps(29);  
+}
+@keyframes tituloanimacion{
+    from{
+       
+        width: 100%;    
+    }
+    to{
+        width: 0%;
+    }
+    
+}
+
+
+.logaso{
+    width: 300px;
+    height: 300px;
+   
+    animation: rodar 5s infinite alternate linear;
+}
+@keyframes rodar{
+    
+}
